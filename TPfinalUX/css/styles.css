@@ -1,0 +1,509 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap");
+/* @import url("https://cdn.jsdelivr.net/npm/fullcalendar@6.1.5/main.min.css"); */
+
+:root{
+    --arena:#CEA561;
+}
+p{
+    margin: 0;
+}
+body{
+    background-color: #151515;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Manrope", sans-serif;
+    color: white;
+}
+header{
+    height: 516px;
+    width: 100%;
+    /* font-family: "Manrope", sans-serif; */
+}
+.banner{
+    background-size: 100% 100%;
+    background-image: url("../assets/img/banner.png");
+    height: 100%;
+    width: 100%;
+    background-color: #1b1b1b;
+}
+.nav-bar{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.logo{
+    height: 40px;
+    width: 204px;
+    justify-self: start;    
+    align-self: center;
+    padding-right: 25px;
+}
+.main-nav-bar{
+    height: 24px;
+    display: flex;
+    column-gap: 32px;
+    align-self: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.main-nav-bar-item{
+    white-space: nowrap;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    font-weight: 400;
+}
+.main-nav-bar-item:hover{
+    text-decoration: underline;
+}
+#main-nav-bar-home{
+    color: var(--arena);
+    text-decoration: underline;
+}
+#main-nav-bar-dropdown{
+    gap: 4px;
+    align-items: center;    
+}
+.main-nav-bar-dropdown-icon{
+    width: 12px;
+    height: 12px;
+}
+.icons{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-self: end;
+    align-self: center;
+    gap: 24px;
+    align-items: center;
+    padding-left: 25px;
+}
+.icons-cart{
+    width: 32px;
+    height: 32px;
+}
+.icons-search{
+    width: 32px;
+    height: 32px;
+}
+.icons-signup{
+    width: 123px;
+    height: 56px;
+    background-color: var(--arena);
+    border-radius: 12px;
+    font-size: 16px;
+    border: none;
+    transition: all 0.2s ease-in;
+}
+.icons-signup:hover{
+    opacity: 70%;
+}
+.banner-title{
+    color: white;
+    justify-self: center;
+    justify-items: center;
+    padding-top: 96px;
+    row-gap: 8px;
+}
+#banner-title-servicios{
+    font-size: 80px;
+    font-weight: 600;
+    line-height: 96px;
+    font-family: "Cormorant Garamond", serif;
+}
+#banner-title-home{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    opacity: 50%;
+    font-style: normal;
+}
+.services{
+    display: grid;
+    grid-template-rows: auto auto;
+    align-items: center;
+    align-self: center;
+}
+.title{
+    color: white;
+    font-size: 64px;
+    line-height: 80px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: "Cormorant Garamond", serif;
+    padding-top: 120px;
+    font-weight: 600;
+}
+.description{
+    color: white;
+    padding-top: 12px;
+    max-width: 620px;
+    margin:0px auto 0px auto;
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+    opacity: 70%;
+    padding-bottom: 80px;
+}
+.services-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    gap: 48px 24px;
+    flex-wrap: wrap;
+}
+.services-cards-card{
+    display: grid;
+    width: 312px;
+    height: 404px;
+    border: 1px solid var(--arena);
+    border-radius: 12px;
+    place-items: center;
+}
+.services-cards-card-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.services-cards-card p{
+    font-size: 48px;
+    line-height: 64px;
+    color: white;
+    padding-top: 32px;
+    margin: 0px;
+    text-align: center;
+    font-family: "Cormorant Garamond", serif;
+}
+.services-cards-card img{
+    height: 90px;
+    width: 110px;
+}
+#wedding-car-icon{
+    width: 74px;
+    height: 140px;
+}
+.packages{
+    display: grid;
+    grid-template-rows: auto auto;
+    align-items: center;
+    align-self: center;
+}
+.packages-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 48px 24px;
+}
+.packages-cards-card{
+    display:grid;
+    border: 1px solid var(--arena);
+    width: 424px;
+    height: 528px;
+    background-color: #2b2b2b;
+    border-radius: 12px;
+}
+.packages-cards-card-content{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    justify-items: center;
+    padding: 48px 64px;
+    color: white;
+}
+.packages-cards-card-content-name{
+    align-self: start;
+    text-align: center;
+    font-size: 32px;
+    line-height: 48px;
+    margin-top: 0px;
+}
+.packages-cards-card-content-price{
+    font-size: 40px;
+    line-height: 60px;
+}
+#packages-cards-card-content-dollar{
+    font-size: 32px;
+    opacity: 70%;
+}
+.packages-cards-card-content-details{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    row-gap: 16px;
+    padding-top: 32px;
+    font-size: 16px;
+    line-height: 24px;
+    align-self: self-start;
+
+}
+.packages-cards-card-content-details p{
+    opacity: 70%;
+}
+.packages-cards-card-content-details img{
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+.packages-cards-card-content-button{
+    border: 1px solid var(--arena);
+    border-radius: 12px;
+    align-items: center;
+    background-color: #2b2b2b;
+    color: #ececec;
+    width: 192px;
+    height: 56px;
+    transition: all 0.2s ease-in;
+    font-size: 16px;
+    line-height: 24px;
+    align-content: start;
+    align-self: flex-end;
+}
+.packages-cards-card-content-button:hover{
+    opacity: 70%;
+    background-color: var(--arena);
+    color: #151515;
+}
+#packages-cards-card-content-button-wedding{
+    background-color: var(--arena);
+    color: #151515;
+}
+.appointment{
+    display: grid;
+    align-items: center;
+}
+.appointment-calendar {
+    width: 648px;
+    height: 348px;
+    justify-self: center;
+    background-color: #2b2b2b;
+    border: 1px solid var(--arena);
+    border-radius: 13px;
+}
+.appointment-calendar img{
+    width: 95%;
+    height: 100%;
+    padding: 0px    16px;
+    object-fit: contain;
+}
+.appointment-time{
+    display: grid;
+    padding-top: 72px;
+    grid-template-rows: auto auto;
+    row-gap: 48px;
+    justify-self: center;
+}
+.appointment-time p{
+    font-size: 32px;
+    line-height: 48px;
+    text-align: center;
+    color: white;
+}
+.appointment-time-buttons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+    justify-content: center;
+}
+.appointment-time-buttons-button{
+    width: 200px;
+    height: 64px;
+    border: 1px solid var(--arena);
+    border-radius: 12px;
+    background-color: #151515;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+    font-weight: 400;
+}
+.appointment-submit{
+    display: grid;
+    grid-template-rows: auto auto;
+    padding-top: 72px;
+    row-gap: 48px;
+    justify-items: center;
+    padding-bottom: 120px;
+}
+.appointment-submit-info{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 24px;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+}
+.appointment-submit-info-space{
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 648px;
+    height: 70px;
+    background-color: #2b2b2b;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    color: rgba(255, 255, 255, 0.5);
+    align-items: center;
+    transition: all 0.2s ease-in;
+}
+.appointment-submit-info-space:hover{
+    color:#151515;
+    background-color: var(--arena);
+}
+.appointment-submit-info-space span{
+    padding: 24px 32px;
+    font-size: 16px;
+    line-height: 24px;
+}
+.appointment-submit-info-space img{
+    width: 24px;
+    height: 24px;
+    justify-self: end;
+    padding-right: 32px;
+}
+.appointment-submit-button{
+    width: 215px;
+    height: 60px;
+    border-radius: 12px;
+    background-color: var(--arena);
+    font-size: 16px;
+    line-height: 24px;
+    color: #151515;
+    font-weight: 400;
+    transition: all 0.2s ease-in;
+    border: 0px;
+}
+.appointment-submit-button:hover{
+    opacity: 70%;
+}
+.stay-updated{
+    height: 468px;
+    background-color: #1b1b1b;
+}
+#stay-updated-description{
+    padding-bottom: 32px;
+}
+.stay-updated-subscription{
+    display: grid;
+    grid-template-columns: auto auto;
+    height: 56px;
+    width: 532px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 12px;
+    justify-self: center;
+    align-items: center;
+}
+.stay-updated-subscription p{
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.4);
+    padding-left: 32px;
+}
+.stay-updated-subscription-button{
+    width: 125px;
+    height: 56px;
+    background-color: var(--arena);
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    justify-self: end;
+    border: 1px solid var(--arena);
+}
+.footer{
+    height: 550px;
+}
+.footer-content{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    padding: 120px 20px 88px 20px;
+    justify-items: center;
+}
+.footer-content-logo{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    width: 132px;
+    row-gap: 32px;
+    align-self: start;
+}
+.footer-content-logo{
+    width: 339px;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.5);
+}
+.footer-content-logo img{
+    height: 40px;
+    width: 204px;
+    justify-self: start; 
+}
+.footer-content-logo-icons{
+    display: flex;
+    column-gap: 32px;
+}
+.footer-content-logo-icons img{
+    width: 40px;
+    height: 40px;
+}
+.footer-content-links{
+    display: flex;
+    column-gap: 106px;
+    align-self: center;
+}
+.footer-content-links-column{
+    display: flex;
+    row-gap: 32px;
+    flex-direction: column;
+}
+.footer-content-links-title{
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 500;
+}
+.footer-content-links-link{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+    line-height: 24px;
+}
+.footer-content-contact{
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+}
+.footer-content-contact-infos{
+    display: flex;
+    flex-direction: column;
+}
+.footer-content-contact-infos-info {
+    display: flex;
+}
+.footer-content-contact-infos-info img{
+    width: 24px;
+    height: 24px;
+}
+.footer-content-contact-infos-info-name{
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+}
+.footer-content-contact-infos-info-detail{
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.5);
+}
+.footer-divider{
+    border: none;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.footer-copyright{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 12px;
+    line-height: 16px;
+    justify-self: center;
+    padding-bottom: 32px;
+    padding-top: 32px;
+}
